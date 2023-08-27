@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +15,10 @@
     src: url('fonts/IPix.woff') format('truetype');
 }
 
+@font-face {
+    font-family: Courier New;
+    src: url('fonts/cour.woff') format('truetype');
+}
 body {
     font-family: VGA, IPix, sans-serif;
     background: linear-gradient(to bottom, black, white);
@@ -29,14 +34,31 @@ body {
 .pointer {
     cursor: url('cursor/pointer.cur'), pointer;
 }
-
 #text1 {
+        font-family: Courier New, sans-serif;
+		position: fixed;
+        z-index: 0;
+        color: white;
+        font-size: 15px;
+        line-height: 17px;
+    	top: 0cm;
+        left: 40px;
+	
+
+
+
+
+
+    }
+#text2 {
     position: fixed;
     z-index: 0;
     color: white;
     font-size: 25px;
     line-height: 10px;
+	top: 4cm;
     left: 2cm;
+	
 }
 
 #aboutme {
@@ -49,6 +71,17 @@ body {
 </head>
 <body>
 <div id="text1">
+   <p style="white-space: pre;">
+██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗██╗
+██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝██║
+██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  ██║
+██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ╚═╝
+╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗██╗
+ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝
+                                                                                                                                                  
+   </p>
+</div>
+<div id="text2">
     <p>Hello大家好！</p>
     <p style="white-space: pre;">我叫dsz，这是我的个人网站。</p>
     <p style="white-space: pre;">很高兴你能来这里。你可以通过以下方式来联系我：</p>
